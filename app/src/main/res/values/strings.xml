@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ytemoi</string>
+    <string name="common_preference">common_preference</string>
+
+    <!--    url-->
+    <string name="url_login">https://ytemoi.com/api/app/app_dangky</string>
+    <string name="url_load_sukien">https://ytemoi.com/api/app/app_nd_loaddichvu</string>
+
+    <string name="Erro_phone_number_empty">Nhập số điện thoại</string>
+    <string name="Erro_phone_number_dont_format">Số điện thoại nhập không đúng định dạng</string>
+
+    <!--    keydulieu-->
+    <string name="key_idnguoidung">idnguoidung</string>
+    <string name="key_sdt">sdt</string>
+
+</resources>
