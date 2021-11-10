@@ -3,6 +3,7 @@ package com.xcomp.ytemoi.view.sukien
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.AuthFailureError
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -31,11 +32,11 @@ class Activity_Sukien : BaseActivity() {
     private fun init_View_dssk() {
         dssukien = ArrayList()
         adapter = Adapter_sukien()
-        val gridLayout = GridLayoutManager(this , 2)
-        rc_data_item_sukien.layoutManager = gridLayout
+//        val linnerlayout=
+//        linnerlayout.orientation = LinearLayoutManager.VERTICAL
+        rc_data_item_sukien.layoutManager = LinearLayoutManager(this)
         rc_data_item_sukien.adapter = adapter
     }
-
     override fun onStart() {
         super.onStart()
         setbien()
@@ -59,6 +60,9 @@ class Activity_Sukien : BaseActivity() {
                 if(ketqua.equals("Success")){
                     val databson = document["databson"] as Document
                     dssukien = databson["dssukien"] as ArrayList<Document>
+                    for( i in 0..8){
+                        dssukien.add(dssukien[0])
+                    }
                     view_dssukien()
                 }
                }, Response.ErrorListener {
