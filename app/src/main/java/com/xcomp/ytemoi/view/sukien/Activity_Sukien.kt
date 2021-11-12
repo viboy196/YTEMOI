@@ -60,9 +60,6 @@ class Activity_Sukien : BaseActivity() {
                 if(ketqua.equals("Success")){
                     val databson = document["databson"] as Document
                     dssukien = databson["dssukien"] as ArrayList<Document>
-                    for( i in 0..8){
-                        dssukien.add(dssukien[0])
-                    }
                     view_dssukien()
                 }
                }, Response.ErrorListener {

@@ -1,162 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/ll_item_sukien"
+    android:id="@+id/cv_item_sukien"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#fff"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp">
+    android:layout_margin="10dp"
+    android:background="#fff"
+    android:gravity="center"
+    app:cardCornerRadius="10dp">
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
-        <LinearLayout
-            android:layout_width="60dp"
-            android:gravity="center"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/layout_item_image_content_title"
-                android:src="@drawable/icon_avatar"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="left|center"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Điều trị"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="8dp"
-                android:textColor="@color/black"
-                android:textStyle="italic"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layoutDirection="rtl"
-        android:layout_alignParentRight="true">
-        <ImageView
-            android:background="@drawable/layout_item_sukien_chucnang"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_item_sukien_exit"
-            app:tint="#66676b" />
-        <ImageView
-            android:background="@drawable/layout_item_sukien_chucnang"
-            android:layout_marginRight="10dp"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_option"
-            app:tint="#66676b" />
-    </LinearLayout>
-</LinearLayout>
-    <LinearLayout
-        android:id="@+id/ll_item_sukien_noidung"
+        android:id="@+id/ll_item_sukien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="thông tin cập nhật"/>
+        android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:layout_alignParentRight="true">
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:text="11:52 30/06/2021"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bác sĩ Đào thị nguyệt gọi"/>
-            </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="..."/>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:gravity="center"
-            android:id="@+id/ll_item_sukien_trangthai"
-            android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:background="#f7f7f7"
             android:orientation="horizontal">
-            <TextView
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trạng Thái"/>
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:layout_alignParentRight="true">
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:gravity="center|right">
+
                 <androidx.cardview.widget.CardView
-                    android:layout_gravity="center"
-                    android:layout_marginRight="10dp"
+                    android:id="@+id/cv_item_sukien_status"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    app:cardCornerRadius="15dp"
-                    android:backgroundTint="#3ddc84"/>
-                <TextView
-                    android:gravity="right"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hoạt động"/>
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
+                    app:cardCornerRadius="8dp" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/item_sukien_tieude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Chữa Bệnh"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
-            android:id="@+id/ll_item_sukien_chedo"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="2dp"
-                android:layout_height="20dp"
-                android:background="#66676b"/>
+
             <TextView
-                android:layout_width="120dp"
-                android:gravity="center"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:text="Mặc định"/>
+                android:gravity="center"
+                android:text="Thông\ntin\nngười\nbệnh" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:layout_alignParentRight="true">
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Họ tên" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="Nguyễn Thị Mai" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày sinh" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="23/07/1976" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cơ sở diều trị" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="Bệnh viện K Hà Nội cơ sở 1 \nĐịa chỉ : 43 Quán Sứ, Hàng Bông, Hoàn Kiếm, Hà Nội" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Phòng" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="P215" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Giường" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="G03" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày Nhập viện" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f7f7f7"
+                        android:text="23/11/2021" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7f7f7"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="cập\nnhật" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   Đặt mặc định"
+                android:textColor="#717171"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -21,7 +21,8 @@
         <entry key="app/src/main/res/drawable/rounded_sukien.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/layout/activity_dang_nhap.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21739130434782608" />
-        <entry key="app/src/main/res/layout/activity_sukien.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_sienkien_1.xml" value="0.3105134474327628" />
+        <entry key="app/src/main/res/layout/activity_sukien.xml" value="0.18" />
         <entry key="app/src/main/res/layout/item_sukien.xml" value="0.33" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12552083333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
