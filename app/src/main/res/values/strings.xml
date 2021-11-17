@@ -12,5 +12,7 @@
     <!--    keydulieu-->
     <string name="key_idnguoidung">idnguoidung</string>
     <string name="key_sdt">sdt</string>
+    <string name="your_string"><b>Thông tin:</b> 05:36 10/11 : Tạo sự kiện </string>
+
 
 </resources>

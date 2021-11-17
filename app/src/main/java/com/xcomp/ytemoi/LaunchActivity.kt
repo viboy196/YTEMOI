@@ -3,6 +3,7 @@ package com.xcomp.ytemoi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.xcomp.ytemoi.services.CallService
 import com.xcomp.ytemoi.utils.Utils
 import com.xcomp.ytemoi.view.dangnhap.Activity_DangNhap
 import com.xcomp.ytemoi.view.sukien.Activity_Sukien
@@ -24,7 +25,10 @@ class LaunchActivity : AppCompatActivity() {
             val intent = Intent(this , Activity_DangNhap::class.java)
             startActivity(intent)
         }
-
+        if(!CallService.isReady()){
+            val intent = Intent(this@LaunchActivity, CallService::class.java)
+            startService(intent)
+        }
     }
 
     private fun setbien() {

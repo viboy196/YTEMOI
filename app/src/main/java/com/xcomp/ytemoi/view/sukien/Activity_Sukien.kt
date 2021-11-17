@@ -1,7 +1,9 @@
 package com.xcomp.ytemoi.view.sukien
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.AuthFailureError
@@ -11,6 +13,7 @@ import com.android.volley.toolbox.Volley
 import com.xcomp.ytemoi.R
 import com.xcomp.ytemoi.support.BaseActivity
 import com.xcomp.ytemoi.utils.Utils
+import com.xcomp.ytemoi.view.qr.Activity_Scan_Qr
 import kotlinx.android.synthetic.main.activity_sukien.*
 import org.bson.Document
 import java.util.HashMap
@@ -25,6 +28,7 @@ class Activity_Sukien : BaseActivity() {
     private lateinit var dssukien:ArrayList<Document>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_sukien)
         init_View_dssk()
     }
@@ -41,6 +45,10 @@ class Activity_Sukien : BaseActivity() {
         super.onStart()
         setbien()
         loadSukien()
+        cv_Qr_Scanf.setOnClickListener {
+            val intent = Intent(this , Activity_Scan_Qr::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setbien() {
@@ -78,6 +86,6 @@ class Activity_Sukien : BaseActivity() {
     }
 
     private fun view_dssukien() {
-        adapter.setdata(dssukien)
+        adapter.setdata(this ,dssukien)
     }
 }

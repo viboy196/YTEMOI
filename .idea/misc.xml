@@ -5,25 +5,50 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/drawable/backgroud_noidung.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/drawable/format_button.xml" value="0.196875" />
         <entry key="app/src/main/res/drawable/format_edittext.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/drawable/format_item_sukien.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/format_sukien.xml" value="0.29322916666666665" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.22135416666666666" />
         <entry key="app/src/main/res/drawable/gradient_bot.xml" value="0.22135416666666666" />
         <entry key="app/src/main/res/drawable/gradient_top.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_bell.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_calendar.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.196875" />
         <entry key="app/src/main/res/drawable/ic_icons8_home.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/drawable/ic_item_sukien_check.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/drawable/ic_item_sukien_exit.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_item_sukien_treatment.xml" value="0.196875" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/drawable/ic_list.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_option.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_qr_code.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_refresh_page_option.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_reload.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/ic_sukien_search.xml" value="0.196875" />
         <entry key="app/src/main/res/drawable/icon_home.xml" value="0.259375" />
+        <entry key="app/src/main/res/drawable/item_layout_tao_s.xml" value="0.1421875" />
+        <entry key="app/src/main/res/drawable/item_layout_tao_sukien.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/drawable/layout_item_image_content_title.xml" value="0.16" />
         <entry key="app/src/main/res/drawable/layout_item_sukien.xml" value="0.259375" />
         <entry key="app/src/main/res/drawable/layout_item_sukien_chucnang.xml" value="0.1171875" />
         <entry key="app/src/main/res/drawable/layout_main_sukien.xml" value="0.259375" />
+        <entry key="app/src/main/res/drawable/layout_sukien_btn_activate.xml" value="0.15625" />
+        <entry key="app/src/main/res/drawable/layout_sukine_ch.xml" value="0.15625" />
         <entry key="app/src/main/res/drawable/rounded_icon_sukien.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/drawable/rounded_sukien.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/layout/activity_dang_nhap.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_goi_yta.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21739130434782608" />
-        <entry key="app/src/main/res/layout/activity_sienkien_1.xml" value="0.3105134474327628" />
-        <entry key="app/src/main/res/layout/activity_sukien.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_scan_qr.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_sienkien_1.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_sukien.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_sukien.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_sukien_footer.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/item_sukien_taosukien.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_sukien_taotinhhuong.xml" value="0.20625" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12552083333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="app/src/main/res/xml/network_security_config.xml" value="0.20380434782608695" />
